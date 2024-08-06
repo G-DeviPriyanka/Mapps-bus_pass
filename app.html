@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSRTC Bus pass Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="form-container">
+        <img src="./logo.jpg" alt="Logo">
+        <h1>APSRTC BusPass Application</h1>
+        <form id="appForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only alphabets are allowed">
+
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree" required>
+                <option value="" disabled selected>Select your degree</option>
+                <option value="elementary">Elementary</option>
+                <option value="primary">Primary</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="degree">Degree</option>
+                <option value="btech">B.Tech</option>
+            </select>
+
+            <div id="degreeDetailsContainer">
+                
+            </div>
+
+            <label for="contactType">Contact Type:</label>
+            <select id="contactType" name="contactType" required>
+                <option value="" disabled selected>Select contact type</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <div id="contactFieldContainer">
+               
+            </div>
+
+            <label for="institute">Name of Institute:</label>
+            <input type="text" id="institute" name="institute" required pattern="[A-Za-z\s]+" title="Only alphabets are allowed">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
